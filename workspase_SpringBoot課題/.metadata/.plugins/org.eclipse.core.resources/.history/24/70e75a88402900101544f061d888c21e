@@ -1,0 +1,12 @@
+package java.com.yi_college.bookmanager;
+
+import java.com.yi_college.bookmanager.model.Book;
+import java.util.ArrayList;
+import org.springframewrk.*;
+
+public class BookService {
+	ArrayList<Book> List=new ArrayList<>();
+	
+	
+	
+}

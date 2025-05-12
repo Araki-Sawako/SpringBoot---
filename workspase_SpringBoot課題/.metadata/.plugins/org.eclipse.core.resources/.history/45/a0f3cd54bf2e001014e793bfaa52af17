@@ -1,0 +1,5 @@
+package com.management.task.model;
+
+public class HomeController {
+
+}

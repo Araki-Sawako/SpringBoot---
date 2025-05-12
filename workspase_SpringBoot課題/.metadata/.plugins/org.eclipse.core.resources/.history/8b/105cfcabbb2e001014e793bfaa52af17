@@ -1,0 +1,10 @@
+package com.management.task.controller;
+
+import java.time.LocalDateTime;
+
+import org.springframework.*;
+
+@Controller
+public class HomeController {
+
+}

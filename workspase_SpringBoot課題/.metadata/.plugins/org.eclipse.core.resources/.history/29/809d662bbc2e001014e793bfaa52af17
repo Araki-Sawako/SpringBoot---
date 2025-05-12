@@ -1,0 +1,24 @@
+package com.management.task.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.*;
+
+
+@Controller
+public class HomeController {
+
+	@RequestMapping(value="/hello")
+	@ResponseBody
+	String hello() {
+		return """
+				<html>
+					<head><title></title></head>
+					<body>
+						<h1>Hello<h1>
+						It works"<br>
+					</body>
+				</html>
+				""".formatted(LocalDateTime.now());
+	}
+	
+}

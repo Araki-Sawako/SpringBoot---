@@ -1,0 +1,30 @@
+package com.college.yi.bookmanager;
+
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Table(name="books")
+@Entity
+@Getter
+@Setter
+public class BookEntity {
+	@Id
+	`GeneratedValue(strategy=GenerationType.UUID)
+	private UUID id;
+	
+	@Column(name="title", length=255 , nullable=false)
+	private String title;
+	
+	@@Column(name="author", length=255 , nullable=false)
+	private String author;
+	
+	@Column(name="publisher", length=255 , nullable=false)
+	private String publisher;
+	
+	@Column(name="published_date")
+	private LocalDate Date;
+
+}

@@ -1,0 +1,12 @@
+package java.com.yi_college.bookmanager.BookmanagerApplication.java;
+
+import org.springframework.boot.SpringApprication;
+
+
+@
+public class BookmanagerApprication {
+	public static void main(String[] args) {
+		SpringApprication.run(BookmanagerApprication.class, args);
+	}
+
+}

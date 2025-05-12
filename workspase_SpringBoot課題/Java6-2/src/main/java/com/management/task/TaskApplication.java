@@ -1,0 +1,6 @@
+package com.management.task;
+
+
+public class TaskApplication {
+
+}

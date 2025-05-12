@@ -1,0 +1,20 @@
+package com.college.yi.bookmanager;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Table(name="books")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class BookEntity {
+	@Id
+	@GeneratedValue(startegy=GenerationType.IDENTITY)
+	private Long id;
+	
+	pribate String title;
+	private String author;
+
+}

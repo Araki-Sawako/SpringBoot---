@@ -1,0 +1,28 @@
+package com.college.yi.bookmanager;
+
+import java.time.LocalDate;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.GenerateValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Table(name="books")
+@Entity
+public class BookEntity {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	private String title;
+	private String author;
+	private String publisher;
+	private LocalDate publishedDate;
+	private int stock;
+
+}

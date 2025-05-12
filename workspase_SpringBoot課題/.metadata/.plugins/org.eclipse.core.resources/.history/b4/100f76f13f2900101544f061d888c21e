@@ -1,0 +1,12 @@
+package java.com.yi_college.bookmanager;
+
+import java.util.ArrayList;
+
+public class BookService {
+	ArrayList<Book> List=new ArrayList<>();
+	
+	public java.util.List<java.awt.print.Book> getAllBooks() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+}

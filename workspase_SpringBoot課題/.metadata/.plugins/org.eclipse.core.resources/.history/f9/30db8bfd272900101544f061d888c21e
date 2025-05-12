@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>書籍一覧</title>
+</head>
+<body>
+	<h1>書籍一覧</h1>
+	<p>ここに書籍データを表示します</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+package java.com.yi_college.bookmanager;
+
+import java.com.yi_college.bookmanager.model.Book;
+import java.util.ArrayList;
+import java.util.*;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookService {
+	 public List<Book> getAllBooks(){
+		 return Arrays.asList(
+		new Book(1,"変な家２", "雨穴","飛鳥新社",LocaDate.of(2023,12,1),10));
+		 );
+	 }
+	
+}

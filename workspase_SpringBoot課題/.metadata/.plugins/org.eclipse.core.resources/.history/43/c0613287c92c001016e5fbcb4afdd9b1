@@ -1,0 +1,16 @@
+package com.college.yi.bookmanager;
+
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Table(name="books")
+@Entity
+@Getter
+@Setter
+
+public class BookEntity {
+
+}

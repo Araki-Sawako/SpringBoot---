@@ -1,0 +1,5 @@
+package com.management.task.controller;
+
+public class HomeRestController {
+
+}

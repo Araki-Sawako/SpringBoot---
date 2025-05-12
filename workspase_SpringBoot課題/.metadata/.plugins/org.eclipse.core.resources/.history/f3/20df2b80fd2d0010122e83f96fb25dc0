@@ -1,0 +1,29 @@
+package com.college.yi.bookmanager.util;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.UUID;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.college.yi.bookmanager.model.Book;
+import com.college.yi.bookmanager.repository.Repository;
+
+@Service
+public class Service {
+	
+	private final Repository repository;
+	
+	@Autowired
+	public Service(Repository repository) {
+		this.repository=repository;
+	}
+	
+	public List<Book> findAll(){
+		return repository.findAll();
+	}
+
+	
+}

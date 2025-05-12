@@ -1,0 +1,9 @@
+package com.college.yi.bookmanager.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.college.yi.bookmanager.BookEntity;
+
+public class BookRepository  extends JpaRepository<BookEntity, Long> {
+
+}

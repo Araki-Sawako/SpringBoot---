@@ -1,0 +1,51 @@
+package com.college.yi.bookmanager.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.college.yi.bookmanager.model.Book;
+import com.college.yi.bookmanager.util.BookService;
+
+import java.net.URI;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/books")
+public class BookController {
+
+    private final BookService bookService;
+    
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
+
+    @GetMapping
+    public List<BookService> getAllBooks() {
+        return bookService.findAll();
+    }
+
+    @PostMapping
+    public ResponseEntity<BookModel> createBook(@RequestBody BookModel model) {
+        BookModel saved = bookService.save(model);
+        return ResponseEntity.created(URI.create("/api/books/" + saved.getId())).body(saved);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<BookModel> updateBook(@PathVariable Long id, @RequestBody BookModel model) {
+        BookModel updated = bookService.update(id, model);
+        return ResponseEntity.ok(updated);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
+        bookService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+}
+
+
+
+    
+    
+    
+    

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="リソース &apos;Maven&apos; を削除" deleteContents="true" description="リソース &apos;Maven&apos; を削除" element1="/Maven" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1746593686303"/>&#x0A;<refactoring comment="リソース &apos;bookmanager-1&apos; を削除" deleteContents="true" description="リソース &apos;bookmanager-1&apos; を削除" element1="/bookmanager-1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1746620053642"/>
+</session>

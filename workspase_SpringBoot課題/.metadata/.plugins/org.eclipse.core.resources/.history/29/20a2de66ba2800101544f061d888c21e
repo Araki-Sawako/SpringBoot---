@@ -1,0 +1,13 @@
+package java.com.yi_college.bookmanager;
+
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("api/books")
+public class BookController {
+	
+	private final BookService bookService;
+
+}

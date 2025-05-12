@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\pleiades\workspase_SpringBoot課題\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3794024335.index
+2543017935.index
+590169954.index
+1241839228.index
+4202330712.index
+508579528.index
+2189871464.index

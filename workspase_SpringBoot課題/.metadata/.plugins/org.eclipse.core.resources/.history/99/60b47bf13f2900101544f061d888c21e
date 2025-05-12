@@ -1,0 +1,38 @@
+package java.com.yi_college.bookmanager;
+
+import java.time.LocalDate;
+
+public class Book {
+	private int id;
+	private String title;
+	private String name;
+	private String publish;
+	private LocalDate publicationDate;
+	private int stock;
+	
+	public int getBookId(int id) {
+		return id;
+	}
+	
+	public String getBookTitle(String title) {
+		return title;
+	}
+	
+	public String getBookName(String name) {
+		return name;
+	}
+	
+	public String getBookPublish(String publish) {
+		return publish;
+	}
+	
+	public void getPublicationDate(LocalDate publicationDate) {
+		return;
+	}
+	
+	public int getStock(int stock) {
+		return stock;
+	}
+}
+
+

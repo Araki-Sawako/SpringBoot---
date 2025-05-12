@@ -1,0 +1,14 @@
+package java.com.yi_college.bookmanager.BookmanagerApplication.java;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+@SpringBootApplication
+public class BookmanagerApprication {
+	private static final String SpringApprication = null;
+
+	public static void main(String[] args) {
+		SpringApprication.run(BookmanagerApprication.class, args);
+	}
+
+}

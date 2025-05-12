@@ -1,0 +1,16 @@
+package java.com.yi_college.bookmanager;
+
+import java.com.yi_college.bookmanager.model.Book;
+import java.util.ArrayList;
+import java.util.*;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookService {
+	 List<Book> books = new ArrayList<>();
+	 
+		books.add(new Book(1,"変な家２", "雨穴","飛鳥新社",LocaDate.of(),10));
+	
+	
+}

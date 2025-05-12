@@ -1,0 +1,10 @@
+package com.college.yi.bookmanager.repository;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Repository
+public interface Repository extends JpaRepository<Book, UUID> {
+
+}

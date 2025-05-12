@@ -65,7 +65,14 @@
             <version>3.0.4</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+            <dependency>
+	    	<groupId>jakarta.persistence</groupId>
+   		 	<artifactId>jakarta.persistence-api</artifactId>
+   	 		<version>3.1.0</version>
+			</dependency>
+    	
 
     <build>
         <plugins>

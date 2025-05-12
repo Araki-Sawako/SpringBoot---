@@ -1,0 +1,26 @@
+package com.college.yi.bookmanager.util;
+
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.college.yi.bookmanager.model.Book;
+import com.college.yi.bookmanager.repository.Repository;
+
+@Service
+public class Service {
+	
+	private final Repository repository;
+	
+	@Autowired
+	public Service(Repository repository) {
+		this.repository=repository;
+	}
+	
+	public List<Book> getAllBooks(){
+		return repository.getAllBooks();
+	}
+
+	
+}

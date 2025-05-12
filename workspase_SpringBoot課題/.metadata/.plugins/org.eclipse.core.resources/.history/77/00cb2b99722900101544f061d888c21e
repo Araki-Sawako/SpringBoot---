@@ -1,0 +1,21 @@
+package com.college.yi.bookmanager.model;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Book {
+    private int id;
+    private String title;
+    private String author;
+    private String publisher;
+    private LocalDate publishDate;
+    private int stock;
+    
+    List<Book> books=new ArrayList<>(id, title, author, publisher, publishDate, stock);
+}

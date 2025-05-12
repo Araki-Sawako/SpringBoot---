@@ -1,0 +1,19 @@
+package com.college.yi.bookmanager.model;
+
+import java.time.LocalDate;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Book {
+    private static int id;
+    private static String title;
+    private static String author;
+    private static String publisher;
+    private static LocalDate publishDate;
+    private static int stock;
+    
+
+}
