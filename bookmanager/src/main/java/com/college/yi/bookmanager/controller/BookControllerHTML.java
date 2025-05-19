@@ -12,8 +12,7 @@ public class BookControllerHTML {
     private BookService bookService;
     @GetMapping("/books")
     public String showBooks(Model model) {
-        model.addAttribute("books", bookService.getAllBooks());
+        model.addAttribute("books", bookService.getAllBooks2());
         return "index";
     }
-
 }

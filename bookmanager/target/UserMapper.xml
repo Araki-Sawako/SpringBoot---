@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd.mybatis-3-mapper/dtd">
+
+<mapper namespace="com.college.yi.bookmanager.Mapper.UserMapper">
+	<reesultMap id="UserResultMap" type="User">
+		<id property="id" column="id"/>
+		<result property="usename" column="username"/>
+		<result property="password" column="password"/>
+        <result property="role" column="role"/>
+        <result property="enabled" column="enabled"/>
+	</reesultMap>
+	
+	<select id="findById" resultMap="UserResultMap">
+		SELECT*FROM users WHERE id=#{id}
+	</select>
+	
+	<select id="findByUsername" resultMap="UserResultMap">
+		SELECT*FROM users WHERE username=#{username}
+	</select>
+	
+	<select id="findAll" resultMap="UserResultMap">
+		SELECT*FROM users
+	</select>
+	
+	<isnert id="insert" parameterType="User">
+		INSERT INTO users (username, password, role, enabled)
+		VALUES (#{username}, #{password}, #{role}, #{enabled})
+	</isnert>
+	
+	<update id="update" parameterType="User">
+		UPDATE users
+		SET username=#{username},
+			password=#{passwoord},
+			role=#{role}
+			enabled=#{enabled}
+		WHERE id==#{id}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM users WHERE id=#{id}
+	</delete>
+
+
+</mapper>
